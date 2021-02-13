@@ -1,0 +1,113 @@
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Travail pratique</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <meta name="description" content="360deg;iImage-A-frame">
+    <script src=".../.../dis/aframe-master.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+                        
+   
+  </head>
+  
+  
+  
+  <body>
+    
+    
+    <a-scene inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <a-assets>
+      
+      
+    <!--squellette tigre-->
+    <a-asset-item id="rass"   src="https://cdn.glitch.com/4cac8e3e-164b-476e-a282-02e39a975ad4%2Fa.glb?v=1608331522992"></a-asset-item>
+      
+      
+    <!--les montagnes-->
+     <a-asset-item id="jbal"   src="https://cdn.glitch.com/4cac8e3e-164b-476e-a282-02e39a975ad4%2Fb.glb?v=1608333115623"></a-asset-item>
+      
+      
+      
+     <!--les arbres--> 
+    <a-asset-item id="baobab2"  src="https://cdn.glitch.com/4cac8e3e-164b-476e-a282-02e39a975ad4%2Fscene.glb?v=1608160854934"></a-asset-item>
+    
+    
+     <!--les arbres--> 
+      
+    <a-asset-item id="baobab12"  src="https://cdn.glitch.com/4cac8e3e-164b-476e-a282-02e39a975ad4%2Fscene.glb?v=1608160854934"></a-asset-item>
+    
+      
+      
+    <!--les arbres3--> 
+    <a-asset-item id="arbre1"  src="https://cdn.glitch.com/11decf3e-3fb9-48d5-8740-01ea6cf86eb0%2Fscene.glb?v=1582846896640"></a-asset-item>
+    
+      
+    
+      
+    
+      
+    <img id="ground"  src="https://cdn.glitch.com/d8b23b84-5fbf-4e1e-8bec-373ad6ae7c99%2Ft.jpg?v=1606824513061">
+    <img id="sky"     src="https://cdn.glitch.com/11decf3e-3fb9-48d5-8740-01ea6cf86eb0%2Fsky5.jpg">
+      
+          
+   
+    </a-assets>
+      
+    
+      
+    <a-sky src="#sky"></a-sky>
+    <a-plane material=" src:#ground ; repeat:1000 1000" height="1000" width="1000" rotation="-90 0 0" ></a-plane>
+    
+    <!--squellette tigre-->
+    <a-entity gltf-model="#baobab"  animation-mixer  position= "0 3 -5"       scale="0.5 0.5 0.5" >  </a-entity>
+    
+     <!--les montagnes-->
+    <a-entity gltf-model="#jbal"     animation-mixer position= "30 16 -75"    scale="1 1 1"   rotation="0 108 0" >  </a-entity> 
+      
+      
+      
+    
+    <!--les arbres-->
+    <a-entity gltf-model="#baobab2"  animation-mixer position= "27 0 -18"      scale="0.002 0.002 0.002">   </a-entity>
+    
+    
+    <!--les arbres2--> 
+    <a-entity gltf-model="#baobab12"  animation-mixer position= "47.51 0 -58"        scale="0.002 0.002 0.002">   </a-entity>
+    
+      
+    
+      
+      <!--les arbres3--> 
+      <a-entity gltf-model="#arbre1"  position="-147 0 -100"  animation-mixer="clip:static pose" scale="0.04 0.04 0.04" rotation= "0 80 0"  ></a-entity>
+      
+    
+    
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+    </a-scene>
+    
+    
+  </body>
+</html>
+
